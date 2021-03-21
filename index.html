@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player21</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/favicon">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="tittle">JOGO DO 21</h1>
+
+        <div class="row">
+            <div class="col active" id="player1">
+                <img src="imgs/player1.png" alt="Player 1">
+                <p>Player 1</p>
+                <p><strong>Pontos: </strong><span id="scores1">0</span></p>
+            </div>
+    
+            <div class="col active" id="player2">
+                <img src="imgs/player2.png" alt="Player2 ">
+                <p>Player 2</p>
+                <p><strong>Pontos: </strong><span id="scores2">0</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col controls">
+                <button class="btn btn-success" onclick="changePlayer()">Pular</button>
+                <button class="btn btn-primary">Finalizar Jogo</button>
+                <button class="btn btn-danger">Resetar</button>
+            </div>
+           
+        </div>
+        <hr>
+        <div class="row ">
+            <div class="col letters">
+                <a href="" onclick="selectletter(event)">
+                    <img src="imgs/baralho-cartas.png" alt="baralho">
+                </a>
+               
+            </div>
+            <div class="col">
+                <img src="imgs/carts/1.png" alt="numero" class="selected-letters" id="letters-selected" style="display:none;">
+            </div>
+        </div>
+       
+    </div>
+    <div class="conteiner text-left"><p >developer:<strong>Claudio Duarte</strong></p></div>
+        
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/app.js"></script>
+</body>

@@ -1,0 +1,19 @@
+.tittle{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #082491;
+}
+.active img{
+    background: #10dddd;
+}
+
+.controls{
+    margin: 26px;
+}
+.letters img{
+    max-width: 200px;
+}
+.selected-letters{
+    max-width: 100px;
+}
